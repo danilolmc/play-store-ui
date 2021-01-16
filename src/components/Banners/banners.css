@@ -1,4 +1,4 @@
-section{
+section.banners-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
     height: 30vh;

@@ -8,4 +8,15 @@
 body {
 
   font-family: 'Poppins',sans-serif;
+  background: #f3faf5;
+}
+
+:root{
+  --dark-green: #009037;
+  --light-green: #18be61;
+  --green: #00b246;
+  --white: #fff;
+  --light-gray: #f3f3f3;
+  --font-color-input: #929292;
+  --nav-items-color: #a0a0a0;
 }

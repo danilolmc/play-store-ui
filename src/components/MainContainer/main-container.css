@@ -1,0 +1,34 @@
+main{
+    height: 60vh;
+    padding: 0 3vw;
+}
+
+.main-content{
+    height: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+    transform: translateY(-8vh);
+    background: var(--white);
+    padding: 2.5vh 1.7vw;
+}
+
+.main-content > header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-content header div.right-content{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.main-content header div.right-content span{
+    color: var(--nav-items-color);
+    filter: brightness(80%);
+    font-size: 1.2rem;
+}
+.main-content header div.right-content span:last-child{
+    filter: brightness(120%);
+}

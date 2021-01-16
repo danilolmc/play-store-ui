@@ -50,7 +50,7 @@ export const Menu = () => {
 
           <img
             src="https://avatars2.githubusercontent.com/u/31545128?s=460&u=eed59e12dfe441d690ebcac879427aa1c2bdb081&v=4"
-            alt="Profile image"
+            alt="Profile"
           />
         </div>
       </div>

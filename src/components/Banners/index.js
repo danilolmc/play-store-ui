@@ -8,7 +8,7 @@ import './banners.css'
 
 export const Banners = () => {
   return (
-    <section>
+    <section className="banners-container">
       <Banner rating={4.5} imgBakcground={royale} />
       <Banner rating={4.2} imgBakcground={forcearena} />
       <Banner rating={4.9} imgBakcground={clans} />
