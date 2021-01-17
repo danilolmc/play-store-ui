@@ -1,9 +1,15 @@
 figure.card-app{
     box-shadow: 0 2px 5px rgba(0, 0, 0, .15);
+    transition: .5s ease;
+}
+
+figure.card-app:hover img{
+    opacity: .75;
 }
 
 figure img{
     width: 100%;
+    transition: .5s ease;
 }
 
 figure figcaption{
@@ -12,16 +18,38 @@ figure figcaption{
 
 figcaption p{
     font-size: .9rem;
+    cursor: context-menu;
+    width: auto;
 }
 
 figcaption p:nth-child(1){
     color: #000;
     font-weight: 800;
+    overflow: hidden;
+    max-height: 23px;
+    position: relative;
+
 }
+
 
 figcaption p:nth-child(2){
     font-size: .8rem;
     line-height: 25px;
+    overflow: hidden;
+    max-height: 23px;
+    position: relative;
+}
+
+figcaption p:nth-child(1)::after,
+figcaption p:nth-child(2)::after{
+    content: "";
+    width: 100%;
+    background: linear-gradient(to right,transparent 75%, #fff 100%);
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
 }
 
 figcaption footer{

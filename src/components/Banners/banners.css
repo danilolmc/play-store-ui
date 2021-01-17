@@ -3,5 +3,6 @@ section.banners-container{
     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
     height: 30vh;
     column-gap: 6px;
-    margin: 7px 0;
+    margin: 7.7vh 0;
+    width: 100%;
 }

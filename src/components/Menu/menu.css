@@ -1,12 +1,3 @@
-:root{
-    --dark-green: #009037;
-    --light-green: #18be61;
-    --green: #00b246;
-    --white: #fff;
-    --light-gray: #f3f3f3;
-    --font-color-input: #929292;
-    --nav-items-color: #a0a0a0;
-}
 
 .menu{
     display: flex;
@@ -17,7 +8,13 @@
     overflow: hidden;    
     max-height: 7vh;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .1);
+    position:fixed;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+    background: var(--white);
 }
+
 
 span{cursor: context-menu;}
 

@@ -1,6 +1,7 @@
 main{
     height: auto;
     padding: 0 3vw;
+    transform: translateY(-5vh);
 }
 
 .main-content{

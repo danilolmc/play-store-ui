@@ -16,15 +16,15 @@ export const AppCard = ({
       <img src={cardImg} />
 
       <figcaption>
-        <p>{appName}</p>
-        <p>by {appDevelopedBy}</p>
+        <p title={appName}>{appName}</p>
+        <p title={`by ${appDevelopedBy}`}>by {appDevelopedBy}</p>
 
         <footer>
           <span>
             <label>
               <FontAwesomeIcon icon={faStar} />
             </label>
-            <label>{appRating}</label>
+            <label>{appRating.toFixed(1)}</label>
           </span>
           <span>
             <label>
