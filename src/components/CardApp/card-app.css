@@ -1,3 +1,47 @@
 figure.card-app{
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15);
+}
+
+figure img{
+    width: 100%;
+}
+
+figure figcaption{
+    padding: 15px 20px;
+}
+
+figcaption p{
+    font-size: .9rem;
+}
+
+figcaption p:nth-child(1){
+    color: #000;
+    font-weight: 800;
+}
+
+figcaption p:nth-child(2){
+    font-size: .8rem;
+    line-height: 25px;
+}
+
+figcaption footer{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 5px;
+    column-gap: 30px;
+}
+
+figcaption footer span{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    font-size: .8rem;
+}
+
+figcaption footer span label:first-of-type{
+    opacity: .3;
+}
+
+figcaption footer span label:last-of-type{
+    transform: translateY(1px);
 }

@@ -21,11 +21,15 @@ export const AppCard = ({
 
         <footer>
           <span>
-            <FontAwesomeIcon icon={faStar} />
+            <label>
+              <FontAwesomeIcon icon={faStar} />
+            </label>
             <label>{appRating}</label>
           </span>
           <span>
-            <FontAwesomeIcon icon={faHdd} />
+            <label>
+              <FontAwesomeIcon icon={faHdd} />
+            </label>
             <label>{appSize} mb</label>
           </span>
         </footer>

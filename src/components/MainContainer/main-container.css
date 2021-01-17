@@ -1,5 +1,5 @@
 main{
-    height: 60vh;
+    height: auto;
     padding: 0 3vw;
 }
 
@@ -9,7 +9,7 @@ main{
     box-shadow: 0 0 8px rgba(0, 0, 0, .2);
     transform: translateY(-8vh);
     background: var(--white);
-    padding: 2.5vh 1.7vw;
+    padding: 3.5vh 2vw;
 }
 
 .main-content > header{

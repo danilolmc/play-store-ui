@@ -1,76 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { AppCard } from "../CardApp";
+import {getInitialsApps} from '../../services/cards.service';
 
 import "./apps-container.css";
 
-export const AppsContainer = ({ title }) => {
-  const apps = [
-      {
-          cardImg:'https://play-lh.googleusercontent.com/rIvZQ_H3hfmexC8vurmLczLtMNBFtxCEdmb2NwkSPz2ZuJJ5nRPD0HbSJ7YTyFGdADQ=s180-rw',
-          appName: 'Clash Royale',
-          appDevelopedBy: 'Supercell',
-          appRating: 4.8,
-          appSize: 48
-      },
-      {
-          cardImg:'https://play-lh.googleusercontent.com/rIvZQ_H3hfmexC8vurmLczLtMNBFtxCEdmb2NwkSPz2ZuJJ5nRPD0HbSJ7YTyFGdADQ=s180-rw',
-          appName: 'Clash Royale',
-          appDevelopedBy: 'Supercell',
-          appRating: 4.8,
-          appSize: 48
-      },
-      {
-          cardImg:'https://play-lh.googleusercontent.com/rIvZQ_H3hfmexC8vurmLczLtMNBFtxCEdmb2NwkSPz2ZuJJ5nRPD0HbSJ7YTyFGdADQ=s180-rw',
-          appName: 'Clash Royale',
-          appDevelopedBy: 'Supercell',
-          appRating: 4.8,
-          appSize: 48
-      },
-      {
-          cardImg:'https://play-lh.googleusercontent.com/rIvZQ_H3hfmexC8vurmLczLtMNBFtxCEdmb2NwkSPz2ZuJJ5nRPD0HbSJ7YTyFGdADQ=s180-rw',
-          appName: 'Clash Royale',
-          appDevelopedBy: 'Supercell',
-          appRating: 4.8,
-          appSize: 48
-      },
-      {
-          cardImg:'https://play-lh.googleusercontent.com/rIvZQ_H3hfmexC8vurmLczLtMNBFtxCEdmb2NwkSPz2ZuJJ5nRPD0HbSJ7YTyFGdADQ=s180-rw',
-          appName: 'Clash Royale',
-          appDevelopedBy: 'Supercell',
-          appRating: 4.8,
-          appSize: 48
-      },
-      {
-          cardImg:'https://play-lh.googleusercontent.com/rIvZQ_H3hfmexC8vurmLczLtMNBFtxCEdmb2NwkSPz2ZuJJ5nRPD0HbSJ7YTyFGdADQ=s180-rw',
-          appName: 'Clash Royale',
-          appDevelopedBy: 'Supercell',
-          appRating: 4.8,
-          appSize: 48
-      },
-      {
-          cardImg:'https://play-lh.googleusercontent.com/rIvZQ_H3hfmexC8vurmLczLtMNBFtxCEdmb2NwkSPz2ZuJJ5nRPD0HbSJ7YTyFGdADQ=s180-rw',
-          appName: 'Clash Royale',
-          appDevelopedBy: 'Supercell',
-          appRating: 4.8,
-          appSize: 48
-      },
-      {
-          cardImg:'https://play-lh.googleusercontent.com/rIvZQ_H3hfmexC8vurmLczLtMNBFtxCEdmb2NwkSPz2ZuJJ5nRPD0HbSJ7YTyFGdADQ=s180-rw',
-          appName: 'Clash Royale',
-          appDevelopedBy: 'Supercell',
-          appRating: 4.8,
-          appSize: 48
-      },
-      {
-          cardImg:'https://play-lh.googleusercontent.com/rIvZQ_H3hfmexC8vurmLczLtMNBFtxCEdmb2NwkSPz2ZuJJ5nRPD0HbSJ7YTyFGdADQ=s180-rw',
-          appName: 'Clash Royale',
-          appDevelopedBy: 'Supercell',
-          appRating: 4.8,
-          appSize: 48
-      },
-  ];
+export const AppsContainer = ({ title, apps}) => {
+  
+  const [firstEight, setfirstEight] = useState()
+
+  useEffect(() => {
+    setfirstEight(getInitialsApps(apps,8))
+  },[apps])
+
+  console.log(apps)
+
 
   return (
     <section className="apps-container">
@@ -90,8 +35,8 @@ export const AppsContainer = ({ title }) => {
       </header>
 
       <div className="apps">
-        {apps.map(app => {
-          return <AppCard {...app} />;
+        {firstEight && firstEight.map((app,index) => {
+            return <AppCard key={index} {...app} />;
         })}
       </div>
     </section>
