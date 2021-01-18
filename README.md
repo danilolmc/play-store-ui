@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# App Store UI
+
+### App store UI build inspired in a UI Design Layout from the web
+
+<br/>
+
+![](./project-screenshot.jpg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
