@@ -10,7 +10,7 @@ const cardAnimate = {
     opacity: 1,
     y: 0,
     transition :{
-      delay: (cardIndex + 7) * 0.06,
+      delay: (cardIndex + 9) * 0.05,
       duration: .7,
       ease : 'easeInOut'
       

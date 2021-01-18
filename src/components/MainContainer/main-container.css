@@ -10,13 +10,14 @@ main{
     box-shadow: 0 0 8px rgba(0, 0, 0, .2);
     transform: translateY(-8vh);
     background: var(--white);
-    padding: 3.5vh 2vw;
+    padding: 3.5vh 1vw;
 }
 
 .main-content > header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1vw;
 }
 
 .main-content header div.right-content{

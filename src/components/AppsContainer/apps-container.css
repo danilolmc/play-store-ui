@@ -1,5 +1,7 @@
 section.apps-container{
     margin: 1.5vh 0 5vh 0;
+    overflow: hidden;
+    padding: 0 1vw;
 }
 
 section.apps-container header.apps-container-header{
