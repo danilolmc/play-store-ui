@@ -6,8 +6,10 @@ import './banner.css'
 
 export const Banner = ({ rating, imgBakcground }) => {
   return (
-    <div className="banner" style={{backgroundImage: `url(${imgBakcground})`}}>
-      <span>
+    <div className="banner">
+      <img className="banner-image" src={imgBakcground}/>
+      
+      <span id="rating-label">
         <FontAwesomeIcon icon={faStar} />
         <label>{rating}</label>
       </span>

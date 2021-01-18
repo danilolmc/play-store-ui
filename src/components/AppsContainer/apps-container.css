@@ -24,7 +24,10 @@ section.apps-container header.apps-container-header{
     font-size: .75rem;
     cursor: pointer;
     height: 20px;
+    cursor: pointer;
 }
+
+
 
 .apps-container-header-div-right button span:last-child{
     font-size: .6rem;

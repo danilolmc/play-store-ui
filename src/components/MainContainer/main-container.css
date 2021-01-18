@@ -33,3 +33,29 @@ main{
 .main-content header div.right-content span:last-child{
     filter: brightness(120%);
 }
+
+.left-content{
+    display: flex;
+    column-gap: 25px;
+    width: auto;
+    margin-bottom: 1vh;
+}
+
+
+.left-content button{
+    background: #181818;
+    color: #fff;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
+    display: grid;
+    font-size: 1.2rem;
+    place-content: center;
+    cursor: pointer;
+    transition: .8s ease;
+}
+
+.left-content button:hover{
+    opacity: .8;
+}

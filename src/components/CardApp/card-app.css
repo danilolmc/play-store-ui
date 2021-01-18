@@ -1,6 +1,6 @@
 figure.card-app{
     box-shadow: 0 2px 5px rgba(0, 0, 0, .15);
-    transition: .5s ease;
+    /* transition: .5s linear; */
 }
 
 figure.card-app:hover img{
