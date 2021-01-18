@@ -13,7 +13,7 @@ const filterOptions = {
   device: ["Samsung GT", "Moto G5"],
 };
 
-const headerMainContainerAnimate = {
+const opacityAnimation = {
   visible: {
     opacity: 1,
     transition: {
@@ -25,12 +25,26 @@ const headerMainContainerAnimate = {
  },
 }
 
+const opacityAndMoveAnimation = {
+  visible: {
+    opacity: 1,
+    y: '-5vh',
+    transition: {
+      duration: 1
+    }
+  },
+  hidden: { 
+    opacity: 0,
+    y:20
+ },
+}
+
 
 export const MainContainer = ({ children }) => {
   return (
-    <main>
+    <motion.main variants={opacityAndMoveAnimation} initial="hidden" animate="visible">
       <div className="main-content">
-        <motion.header variants={headerMainContainerAnimate} initial="hidden" animate="visible">
+        <motion.header variants={opacityAnimation} initial="hidden" animate="visible">
           <div className="left-content">
             <Dropdown
               filterName="category"
@@ -66,6 +80,6 @@ export const MainContainer = ({ children }) => {
 
         {children}
       </div>
-    </main>
+    </motion.main>
   );
 };
